@@ -67,14 +67,14 @@
 
 <div class="container">
     <header>
-        <h1>ENHANCING MULTILINGUAL TTS WITH VOICE CONVERSION BASED DATA AUGMENTATION AND POSTERIOR EMBEDDING</h1>
-		<h3>Hyun-Wook Yoon, Jin-Seob Kim, Ryuichi Yamamoto, Ryo Terashima, Chan-Ho Song, Jae-Min Kim, Eunwoo Song</h3>
+        <h1>Effective Cross-Lingual Many-to-Many Voice Conversion toward Natural Pronunciation Transfer</h1>h1>
+		<h3>Chan-Ho Song, Hyun-Wook Yoon, Jin-Seob Kim, Ryuichi Yamamoto, Ryo Terashima, Eunwoo Song</h3>
     </header>
 
     <section id="description">
         <h2>Abstract</h2>
-        <p>This paper proposes a multilingual, multi-speaker (MM) TTS system by using a voice conversion (VC)-based data augmentation method. Creating an MM-TTS model is challenging, owing to the difficulties of collecting polyglot data from multiple speakers. To address this problem, we adopt a cross-lingual, multi-speaker (CM) VC model trained with multiple speakers’ monolingual databases. As this model effectively transfers acoustic attributes while retaining the content information, it is possible to generate each speaker’s polyglot corpora. Subsequently, we design the MM-TTS model with variational autoencoder (VAE)-based posterior embeddings. It is to be noted that incorporating VC-augmented polyglot corpora into the TTS training process might degrade synthetic quality, since the corpora sometimes contain unwanted artifacts. To mitigate this issue, the VAE is trained to capture the acoustic dissimilarity between the recorded and VC-augmented datasets. Through the selective choice of the posterior embeddings obtained from the original recordings in the training set, the proposed model enables the generation of acoustically clearer voices.
-		</p>
+		<p>Recent advances in speech self-supervised learning (SSL) models have enabled voice conversion (VC) systems to effectively disentangle linguistic content from speaker identity. However, cross-lingual models still struggle with unnatural in- tonation due to difficulties in separating language-specific pro- nunciation from speaker timbre. To address this challenge, we proposes X2M-VC, a cross-lingual, many-to-many VC model that effectively converts the speaker timbre across different languages while preserving the natural pronunciation. Through a comprehensive study of SSL models, we identify the most effective representations for capturing both linguistic content and language-specific attribute from the given speech. By incorporat- ing these SSL-based content representations with explicit speaker and language embeddings, our X2M-VC model ensures robust transfer of speaker characteristics while maintaining the orig- inal language’s native pronunciation. Objective and subjective evaluations on a multilingual corpus including English, Korean, and Japanese demonstrate significant improvements in voice conversion quality and accuracy across multiple languages.
+        </p>
     </section>
 
     <hr>
