@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #00a652;
+    color: #fff;
+    padding: 20px 10;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 20px 0;
+}
+
+hr {
+    border: 1px solid #dcdcdc;
+}
+
+h2 {
+    color: #333;
+}
+
+#scriptContainer {
+    background-color: #fff;
+    color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.player-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.active-script {
+    background-color: #f0db4f;
+    color: #333;
+}
+
+.figure-container {
+    display: flex; /* enables flexbox */
+    justify-content: center; /* centers items on the main-axis (horizontally) */
+    align-items: flex-start; /* aligns items to the start of the cross-axis (top of the container) */
+    flex-wrap: nowrap; /* prevents wrapping */
+    gap: 20px; /* spaces between the figures */
+  }
+
+  figure {
+    text-align: center; /* centers the caption */
+  }
+
+  img {
+    max-width: 100%; /* makes image responsive */
+    height: auto; /* maintains aspect ratio */
+  }
+
+  /* If you want a max height on your images, uncomment this */
+  /* img {
+    max-height: 150px; /* example fixed height for all images */
+  /* } */
