@@ -46,6 +46,9 @@
             max-width: 100%;
             height: auto;
         }
+        .indented {
+            text-indent: 40px; /* 첫 번째 줄 들여쓰기 */
+        }
         @media (max-width: 768px) {
             .figure-container figure {
                 flex: 1;
@@ -58,7 +61,7 @@
                 justify-content: center;
             }
             .figure-container figure {
-                max-width: 300px; /* 또는 적절한 최대 너비 */
+                max-width: 400px; /* 또는 적절한 최대 너비 */
             }
         }
     </style>
@@ -79,32 +82,33 @@
 
     <hr>
 
-    <section id="VAE figures">
-        <h2>Figures</h2>
-        In this paper, we incorporated the VAE structure into the learning process and confirmed that it is possible to distinguish between the characteristics of real (recorded) audio and augmented (voice converted) audio. 
-        By using only the characteristics of real audio for inference, we were able to synthesize higher quality audio than simply using an augmented database. 
-        The following represents the embeddings in the latent space of the learned VAE, differentiated by each characteristic. 
-        Each point signifies a posterior embedding extracted from the audio, and is visualized with different colors or shapes based on aspects like language, speaker, or the presence of voice conversion (VC). 
-        As seen in the figure, it was evident that the boundaries were more distinctly defined from the perspective of VC presence compared to other characteristics.
+    <section id="SSL features">
+        <h2>Self-supervised Learning Feature Selection</h2>
+        <p>To investigate suitable SSL models for cross-lingual VC, we experimented with the following three state-of-the-art SSL models:</p>
+        <p class="indented">• XLS-R: A large-scale multilingual model trained on over 370,000 hours of data across 128 languages, originally used in NANSY++.</p>
+        <p class="indented">• ContentVec: Based on HuBERT [20], this model minimizes speaker identity leakage using knowledge distillation and contrastive loss.</p>
+        <p class="indented">• MMS: Sharing the same architecture as wav2vec 2.0, like XLS-R, but is trained on approximately 500,000 hours of speech across 1,400 languages.</p>
         <!-- First figure for the language colored plot -->
         <section class="figure-container">
             <figure>
-                <img src="t-sne_train_lang_ver2.png" alt="Data plot colored by language">
-                <figcaption>&lt;Colored by language&gt;</figcaption>
+                <img src="XLS-R_50_demo.png" alt="SSL feature from XLS-R">
+                <figcaption>&lt;XLS-R&gt;</figcaption>
             </figure>
     
             <!-- Second figure for the speaker colored plot -->
             <figure>
-                <img src="t-sne_train_spk_ver2.png" alt="Data plot colored by speaker">
-                <figcaption>&lt;Colored by speaker&gt;</figcaption>
+                <img src="Contentvec_50_demo.png" alt="SSL feature from ContentVec">
+                <figcaption>&lt;ContentVec&gt;</figcaption>
             </figure>
     
             <!-- Third figure for the recorded/augmented colored plot -->
             <figure>
-                <img src="t-sne_train_rec_aug_ver2.png" alt="Data plot colored by recorded/augmented">
-                <figcaption>&lt;Colored by recording&gt;</figcaption>
+                <img src="MMS_50_demo.png" alt="SSL feature from MMS">
+                <figcaption>&lt;MMS&gt;</figcaption>
             </figure>
         </section>
+        <p>Above figures describes the output representations of each SSL model visualized in t-SNE space, based on training data from different languages.</p>
+        <p>The results reveal that MMS exhibits stronger language-based clustering than XLS-R and ContentVec, suggesting it has a greater ability to capture language-dependent characteristics.</p>
     </section>
 
     <hr>
