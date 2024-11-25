@@ -1034,12 +1034,15 @@
 
     <section id="Objective">
         <h2>Objective measure</h2>
-        <p>To investigate suitable SSL models and conditioning method for cross-lingual VC, we experimented with the following three state-of-the-art SSL models:</p>
-        <p class="indented">• XLS-R-VC,ContentVec-VC, and MMS-VC: Baseline systems that use different SSL models with implicit speaker embedding conditions.</p>
-        <p class="indented">• + LS: explicit language and speaker embedding conditioning.</p>
+        <p>To investigate suitable SSL models and conditioning methods for cross-lingual VC, we experimented with the following three state-of-the-art SSL models:</p>
+        <ul>
+            <li><strong>XLS-R-VC, ContentVec-VC, and MMS-VC:</strong> Baseline systems that use different SSL models with implicit speaker embedding conditions.</li>
+            <li><strong>+ LS:</strong> Explicit language and speaker embedding conditioning.</li>
+        </ul>
+        
         <h3>1. Overall language</h3>
-        <table border="1" style="border-collapse: collapse; text-align: center; width: 100%;">
-            <thead>
+        <table style="border-collapse: collapse; width: 100%; font-size: 12px; text-align: center;">
+            <thead style="background-color: #f2f2f2;">
                 <tr>
                     <th>Model</th>
                     <th>WER (%)</th>
@@ -1094,11 +1097,11 @@
             </tbody>
         </table>
     
-        <h3>2. Each language</h3>
+        <h3>2. Language-wise Details</h3>
         <!-- English Table -->
         <h3>English</h3>
-        <table border="1" style="border-collapse: collapse; text-align: center; width: 100%;">
-            <thead>
+        <table style="border-collapse: collapse; width: 100%; font-size: 12px; text-align: center;">
+            <thead style="background-color: #f2f2f2;">
                 <tr>
                     <th>Model</th>
                     <th>Gender</th>
@@ -1126,8 +1129,8 @@
 
         <!-- Korean Table -->
         <h3>Korean</h3>
-        <table border="1" style="border-collapse: collapse; text-align: center; width: 100%;">
-            <thead>
+        <table style="border-collapse: collapse; width: 100%; font-size: 12px; text-align: center;">
+            <thead style="background-color: #f2f2f2;">
                 <tr>
                     <th>Model</th>
                     <th>Gender</th>
@@ -1155,8 +1158,8 @@
 
         <!-- Japanese Table -->
         <h3>Japanese</h3>
-        <table border="1" style="border-collapse: collapse; text-align: center; width: 100%;">
-            <thead>
+        <table style="border-collapse: collapse; width: 100%; font-size: 12px; text-align: center;">
+            <thead style="background-color: #f2f2f2;">
                 <tr>
                     <th>Model</th>
                     <th>Gender</th>
