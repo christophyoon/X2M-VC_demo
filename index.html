@@ -54,6 +54,12 @@
             font-size: 0.9em; /* 글자 크기 */
             text-align: center; /* 텍스트 중앙 정렬 */
         }
+        .flex_table {
+            display: flex;
+            justify-content: flex-start;
+            gap: 30px; /* 테이블 간의 간격 */
+            padding: 0px;
+        }
         @media (max-width: 768px) {
             .figure-container figure {
                 flex: 1;
@@ -2072,8 +2078,545 @@
     <hr>
 
     <section id="other">
-        <h2>4. Other Language</h2>
-        <p>~~~~~~</p>
+        <h2>4. Expansion to more diverse languages (French, Spanish)</h2>
+        <p>To demonstrate that the proposed model can be extended to more diverse languages, we further trained the model with additional languages such as French and Spanish.</p>
+        <p>English, Korean, French, and Spanish datasets were included during training.</p>
+        
+        <h3>First language: English</h3>
+        <div class="flex_table">
+            <table>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Source</th>
+                            <th>Target</th>
+                            <th>X2M-VC (Proposed)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">
+                                <audio controls>
+                                    <source src="./samples/extras/fmlk19048.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Female</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/ffml07023.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">French</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fmlk19048_to_ffml07023.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fest01647.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Spanish</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fmlk19048_to_fest01647.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fkgi002553.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Korean</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fmlk19048_to_fkgi002553.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </table>
+            <table>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Source</th>
+                            <th>Target</th>
+                            <th>X2M-VC (Proposed)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">
+                                <audio controls>
+                                    <source src="./samples/extras/mmat006616.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Male</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mfbn007752.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">French</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mmat006616_to_mfbn009513.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/msac09316.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Spanish</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mmat006616_to_msac09316.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mkdy100801.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Korean</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mmat006616_to_mkdy100801.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </table>
+        </div>
+
+        <h3>First language: French</h3>
+        <div class="flex_table">
+            <table>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Source</th>
+                            <th>Target</th>
+                            <th>X2M-VC (Proposed)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">
+                                <audio controls>
+                                    <source src="./samples/extras/ffml00458.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Female</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fmlk21629.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">English</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/ffml00458_to_fmlk21629.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fest01647.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Spanish</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/ffml00458_to_fest01647.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fkgi002553.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Korean</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/ffml00458_to_fkgi002553.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </table>
+            <table>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Source</th>
+                            <th>Target</th>
+                            <th>X2M-VC (Proposed)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">
+                                <audio controls>
+                                    <source src="./samples/extras/mfbn007752.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Male</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mmat023066.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">English</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mfbn007752_to_mmat023066.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/msac09316.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Spanish</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mfbn007752_to_msac09316.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mkdy100801.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Korean</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mfbn007752_to_mkdy100801.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </table>
+        </div>
+
+        <h3>First language: Spanish</h3>
+        <div class="flex_table">
+            <table>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Source</th>
+                            <th>Target</th>
+                            <th>X2M-VC (Proposed)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">
+                                <audio controls>
+                                    <source src="./samples/extras/fest05454.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Female</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fmlk21629.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">English</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fest05454_to_fmlk21629.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/ffml07023.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">French</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fest05454_to_ffml07023.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fkgi002553.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Korean</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fest05454_to_fkgi002553.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </table>
+            <table>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Source</th>
+                            <th>Target</th>
+                            <th>X2M-VC (Proposed)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">
+                                <audio controls>
+                                    <source src="./samples/extras/msac01638.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Male</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mmat023066.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">English</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/msac01638_to_mmat023066.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mfbn009513.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">French</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/msac01638_to_mfbn009513.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mkdy100801.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Korean</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/msac01638_to_mkdy100801.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </table>
+        </div>
+
+        <h3>First language: Korean</h3>
+        <div class="flex_table">
+            <table>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Source</th>
+                            <th>Target</th>
+                            <th>X2M-VC (Proposed)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">
+                                <audio controls>
+                                    <source src="./samples/extras/fkgi000580.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Female</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fmlk21629.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">English</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fkgi000580_to_fmlk21629.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/ffml07023.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">French</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fkgi000580_to_ffml07023.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fest01647.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Spanish</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/fkgi000580_to_fest01647.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </table>
+            <table>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Source</th>
+                            <th>Target</th>
+                            <th>X2M-VC (Proposed)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">
+                                <audio controls>
+                                    <source src="./samples/extras/mkdy140096.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Male</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mmat023066.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">English</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mkdy140096_to_mmat023066.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mfbn009513.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">French</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mkdy140096_to_mfbn009513.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/msac09316.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p class="description">Spanish</p>
+                            </td>
+                            <td>
+                                <audio controls>
+                                    <source src="./samples/extras/mkdy140096_to_msac09316.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </table>
+        </div>
     </section>
 </body>
 </html>
