@@ -83,7 +83,7 @@
     <hr>
 
     <section id="SSL features">
-        <h2>Self-supervised Learning Feature Selection</h2>
+        <h2>1. Self-supervised Learning Feature Selection</h2>
         <p>To investigate suitable SSL models for cross-lingual VC, we experimented with the following three state-of-the-art SSL models:</p>
         <p class="indented">• XLS-R: A large-scale multilingual model trained on over 370,000 hours of data across 128 languages, originally used in NANSY++.</p>
         <p class="indented">• ContentVec: Based on HuBERT, this model minimizes speaker identity leakage using knowledge distillation and contrastive loss.</p>
@@ -115,9 +115,9 @@
 
     <section id="audio-samples">
 		<!DOCTYPE html>
-    <h2>Demo</h2>
+    <h2>2. Samples</h2>
     <section id="female speakers">
-        <h3>1. Female Speakers</h3>
+        <h3>2-1. Female Speakers</h3>
 		<h3>First language: English</h3>
         <table class="language-table">
         <table border="1">
@@ -142,6 +142,7 @@
                     <td>
                         <audio controls>
                             <source src="./samples/Recording/fkgi001548.wav" type="audio/wav">
+                            Korean
                             Your browser does not support the audio element.
                         </audio>
                     </td>
@@ -174,6 +175,7 @@
                     <td>
                         <audio controls>
                             <source src="./samples/Recording/fkyw042336.wav" type="audio/wav">
+                            Korean
                             Your browser does not support the audio element.
                         </audio>
                     </td>
@@ -206,6 +208,7 @@
                     <td>
                         <audio controls>
                             <source src="./samples/Recording/fmkm002233.wav" type="audio/wav">
+                            Japanese
                             Your browser does not support the audio element.
                         </audio>
                     </td>
@@ -238,6 +241,7 @@
                     <td>
                         <audio controls>
                             <source src="./samples/Recording/fyma04817.wav" type="audio/wav">
+                            Japanese
                             Your browser does not support the audio element.
                         </audio>
                     </td>
@@ -976,7 +980,7 @@
     </section>
 
     <section id="male speakers">
-        <h3>2. Male Speakers</h3>
+        <h3>2-2. Male Speakers</h3>
 		<h3>First language: English</h3>
         <table class="language-table">
         <table border="1">
@@ -1569,14 +1573,14 @@
     <hr>
 
     <section id="Objective">
-        <h2>Objective measure</h2>
+        <h2>3. Objective measure</h2>
         <p>To investigate suitable SSL models and conditioning methods for cross-lingual VC, we experimented with the following three state-of-the-art SSL models:</p>
         <ul>
             <li><strong>XLS-R-VC, ContentVec-VC, and MMS-VC:</strong> Baseline systems that use different SSL models with implicit speaker embedding conditions.</li>
             <li><strong>+ LS:</strong> Explicit language and speaker embedding conditioning.</li>
         </ul>
         
-        <h3>1. Overall language</h3>
+        <h3>3-1. Overall language</h3>
         <table border="1" style="border-collapse: collapse; width: 100%; text-align: center; font-size: 0.9em;">
             <thead>
                 <tr>
@@ -1640,7 +1644,7 @@
             </tbody>
         </table>
     
-        <h3>2. Language-wise Details</h3>
+        <h3>3-2. Language-wise Details</h3>
         <!-- English Table -->
         <h3>English</h3>
         <table border="1" style="border-collapse: collapse; width: 100%; font-size: 12px; text-align: center;">
